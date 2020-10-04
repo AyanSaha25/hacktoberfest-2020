@@ -1,0 +1,65 @@
+.header{
+    margin: 3%;
+}
+.header h2, p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.leftside, .rightside{
+    height: 100vh;
+    width: 100%;
+}
+.single-book{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #000;
+    border-radius: 150px 20px 30px 23px;
+}
+.book-img{
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.book-img img{
+    width: 100%;
+    transition: 4%;
+}
+.single-book:hover .book-img img{
+    transform: scale(1,5,1,5);
+}
+.book-content{
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    transition: all -4s;
+    background: #e430c5a8;
+
+}
+.single-book:hover .book-content{
+    height: 150px;
+    background: #000;
+}
+.book-info{
+    transition: all , 5s;
+    padding: 5px 20px 5px 20px;
+}
+.book-info h3{
+    font-size: 16px;
+    color: #fff;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.single-book:hover .book-info h3{
+    color: tomato;
+}
+.book-info p{
+    color: #fff;
+    margin-top: 15px;
+}
+.book-text{
+    color: #fff;
+    padding: 0 10px 5px;
+}
