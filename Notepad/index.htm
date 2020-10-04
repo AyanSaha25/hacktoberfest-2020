@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <title>Word Count</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Word Counter</h1>
+    </div>
+    <hr><br>
+    <div class="container">
+        <h1 id="headText">Pad</h1>
+        <div class="info-panel">
+            <ul class="parameters">
+                <li class="letter-count"><span id="letter-count">0</span> letters</li>
+                <li class="word-count"><span id="word-count">0</span> words</li>
+                <li class="sentence-count"><span id="sentence-count">0</span> sentences</li>
+            </ul>
+        </div>
+
+        <div class="tool-bar">
+            <div class="tooltip copy">
+                <span class="copy-btn">&#9861;</span>
+                <span class="tooltip-text copy">Copy text</span>
+            </div>
+            <div class="tooltip clear">
+                <span class="clear-btn">&times;</span><span class="tooltip-text clear">Clear pad</span>
+            </div>
+            <div class="tooltip redo">
+                <span class="redo-btn">&#9850;</span><span class="tooltip-text redo">Re-check</span>
+            </div>
+            <div class="tooltip theme">
+                <span class="theme-btn" id="theme">&#9790;</span>
+                <span class="tooltip-text theme">Dark</span>
+            </div>
+            <div class="tooltip bold">
+                <span class="bold-btn" id="bold-text">&#914;</span>
+                <span class="tooltip-text bold">Bold</span>
+            </div>
+            <div class="tooltip size-plus">
+                <span class="size-plus-btn" id="plus-size">A+</span>
+                <span class="size-minus-btn" id="minus-size">A-</span>
+            </div>
+
+        </div>
+
+        <span class="right-arrow">&rarr;</span>
+        <textarea class="inner" placeholder="Type here..." spellcheck="true">
+
+        </textarea>
+        <br>
+        <span class="words-per-line">approx <span id="wpl">0</span> words per line</span>
+    </div>
+    <pre id="temp" hidden='true'>adasda</pre>
+    <script src="action.js"></script>
+</body>
+
+</html>
