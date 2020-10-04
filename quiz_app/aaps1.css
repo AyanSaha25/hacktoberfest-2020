@@ -1,0 +1,122 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --hue-neutral: 23;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+h1{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;;
+  color:green ;
+  text-shadow: 2px 2px black;
+  text-decoration : none;
+  text-align: center;
+  text-decoration:underline;
+}
+h3{
+  padding-bottom: 20px;
+text-align: center;
+color: black;
+font-size: 20px;
+}
+body {
+  --hue: var(--hue-neutral);
+  font-family:inherit;
+   padding:0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vw;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(https://s3.envato.com/files/144797738/sightsignal-mysteryquestionmarkquizloop1IMG.jpg);
+
+
+}
+
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+
+ font-size: 20px;
+  width: 50%;
+  max-width: 90%;
+ background-color:white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0  7px black;
+  background-image:url(https://p7.hiclipart.com/preview/378/613/232/question-mark-computer-icons-desktop-wallpaper-clip-art-question-mark.jpg)
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: black;
+  border-radius: 20px;
+  padding: 12px 24px;
+  color: white;
+  outline-color: black;
+t
+}
+
+.btn:hover {
+  border-color: black;
+  opacity: 0.5;
+  background-color: white;
+  color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color:green;
+}
+
+.fa-certificate {
+  color: orange;
+  border: black;
+}
+
+.abc {
+  text-align: center;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+  color: red;
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#question {
+  text-decoration: none;
+}
