@@ -1,0 +1,136 @@
+body{
+  background-color:#313131;
+}
+header{
+
+ background: gray;
+/*  background-color: black;
+  color: #D81F26;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px 5px;
+  margin-top: 0; */
+}header::after{
+  content: ;
+  display: table;
+  clear: both;
+}
+#navbar{
+  background: black;
+  position: inherit;
+}
+#navbar ul{
+padding: 0;
+margin:0;
+list-style: none;
+}
+
+#navbar li{
+  display:inline-block;
+  margin-left: 70px;
+  padding: 25px;
+  position: relative;
+}
+#navbar a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#navbar a:hover{
+  color:#979797;
+}
+#navbar a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width:0;
+  top: 0;
+  transition: all ease-in-out 250ms;
+  position: absolute;
+  background-color:#D81F26 ;
+}
+#navbar a:hover::before{
+  width: 100%;
+}
+
+.lyrics h2{
+  font-size: 50px;
+  color:black;
+font-weight: bold;
+font-family: Bebas Neue;
+}
+
+.lyrics {
+  color: white;
+  background-color: #525252;
+  font-family: Raleway;
+  padding-left: 50px;
+  width: 50%;
+  float: left;
+  border-top: 5px solid #ff4949;
+  word-spacing: 2.5px;
+  margin-bottom: 50px; 
+  }
+.link {
+  color: silver;
+  background-color: #525252;
+  font-family: Raleway;
+  padding-left: 50px;
+  width: 40%;
+  float: right;
+  border-bottom: 5px solid #ff4949;
+}
+.link h3{
+  font-family: Bebas Neue;
+  color: black;
+  font-size: 30px;
+}
+.link a{
+  color: silver;
+  text-decoration: none;
+}
+.lang {
+  color: silver;
+  background-color: #525252;
+  font-family: Raleway;
+  padding-left: 50px;
+  width: 40%;
+  float: right;
+  border-bottom: 5px solid #ff4949;
+  margin-top: 50px;
+}
+.lang h3{
+  font-family: Bebas Neue;
+  color: black;
+  font-size: 30px;
+}
+.lang a{
+  color: silver;
+  text-decoration: none;
+}
+
+iframe {
+margin-left: 300px;
+}
+footer{
+  background-color: black;
+  color: white;
+  width:100%;
+  overflow: hidden;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  margin:0px;
+  border-top: 5px #D81F26;
+}
+footer a{
+  color:#ff4949;
+  text-decoration: none;
+
+  margin-left: 40px;
+
+  position: relative;
+}
+
+footer a:hover{
+  color:gray;
+}
