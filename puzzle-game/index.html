@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Puzzle</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/puzzle.css">
+</head>
+<body>
+    
+    <img src="res/bg-loading.svg" style="display: none;">
+
+    <div id="game"></div>
+
+    <script src="js/main/Observer.js"></script>
+    <script src="js/main/Stage.js"></script>
+    <script src="js/game-main.js"></script>
+    <script src="js/elements/Element.js"></script>
+    <script src="js/elements/Button.js"></script>
+    <script src="js/elements/Label.js"></script>
+    <script src="js/stages/GameLoader.js"></script>
+    <script src="js/stages/WelcomeScreen.js"></script>
+    <script src="js/stages/Game.js"></script>
+
+    <script>
+    /**
+    * available options:
+    *  language: "en" or "de" [default: en]
+    *  random: boolean - images appear in random order if set [default: true]
+    *  set: string|null - game state gets saved to localStorage with this key [default: null]
+    *  cnt: number - number if images (if set is "randomjs")
+    *  images: array - array of image paths
+    *  directory: string - directory to prepent to each image path [default: images]
+    *
+    *  if set is "randomjs" random images from https://picsum.photos/ get fetched
+    */	
+    var game = new Game('#game', {
+        "language": "en",
+        "random": true,
+        "set": "randomjs"
+    });
+    </script>
+
+</body>
+</html>
