@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kz">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Madi Bolat">
+		<title>NOQAT</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
+		<link href="main.css" rel="stylesheet">
+	</head>
+	<body>
+		<main class="wrap" id="app">
+			<div class="row">
+				<label for="inputText">Kırıllısa:</label>
+				<textarea id="inputText" rows="7" v-model="inputText" @input="translit"></textarea>
+				<button @click="clear" v-if="inputText">Joú</button>
+			</div>
+			<div class="row" id="output">
+				<label for="outputText">Noqat:</label>
+				<textarea id="outputText" rows="7" v-model="outputText" readonly></textarea>
+			</div>
+		</main>
+		<!-- JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="translate.js"></script>
+	</body>
+</html>
